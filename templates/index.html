@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block app_content %}
+    <div class="btn">
+        <form action="" method="post">
+            <p>
+                <label for="message">Ширина:</label>
+                <input type="text" name="width">
+                <label for="message">Высота:</label>
+                <input type="text" name="height">
+            </p>
+            <p>
+                <input type="submit">
+            </p>
+        </form>
+    </div>
+    <a class="btn btn-primary" href="{{ url_for('live') }}">Создать жизнь!</a>
+{% endblock %}
